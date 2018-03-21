@@ -3,10 +3,10 @@
       var Fecha = document.getElementById('TxtFecha').value;
       var Mensaje = '';
  
-        if(Fecha.length == 8){
+        if(Fecha.length == 10){
           var Anio = Fecha.substr(0, 4); 
-          var Mes = parseFloat(Fecha.substr(4, 2)) - 1;
-          var Dia = Fecha.substr(6, 2); 
+          var Mes = parseFloat(Fecha.substr(6, 2)) - 1;
+          var Dia = Fecha.substr(8, 2); 
   
           var VFecha = new Date(Anio, Mes, Dia);
 
